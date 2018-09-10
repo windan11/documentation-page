@@ -37,7 +37,7 @@ body{
 	margin: 0;
 	color: #596a7f;
 }
-.nav-link{
+#title a, .nav-link{
 	color: #596a7f;
 	text-decoration: none;
 }
@@ -47,6 +47,14 @@ body{
 #main-doc{
 	padding: 1.6em .6em 1.6em 0;
 	grid-area: content;
+}
+.main-section::before{
+	display: block;
+	content: " ";
+	margin-top: -92px;
+	height: 92px;
+	visibility: hidden;
+	pointer-events: none;
 }
 #main-doc header{
 	color: #21BFB4;
@@ -82,6 +90,10 @@ footer{
 	}
 	#main-doc{
 		padding: 12.8em 2% 0 2%;
+	}
+	.main-section::before{
+		margin-top: -236px;
+		height: 236px;
 	}
 	footer{
 		padding: 2%;
